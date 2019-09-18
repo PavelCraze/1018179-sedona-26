@@ -20,28 +20,81 @@
     </header>
     <main>
         <section class="preferences">
-            <!--Пустая секция-->
+          <h2 class="visually-hidden">Предпочтения</h2>
+          <form action="https://echo.htmlacademy.ru" method="POST">
+            <div class="checkboxes">
+              <p>Инфраструктура:</p>
+              <p><input type="checkbox" name="pool" value="pool" checked>Бассейн</p>
+              <p><input type="checkbox" name="parking" value="parking">Парковка</p>
+              <p><input type="checkbox" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</p>
+            </div>
+            <div class="checkboxes">
+              <p>Тип жилья:</p>
+              <p><input type="checkbox" name="hotel" value="hotel" checked>Гостиница</p>
+              <p><input type="checkbox" name="motel" value="motel" checked>Мотель</p>
+              <p><input type="checkbox" name="apartaments" value="apartaments" checked>Апартаменты</p>
+            </div>
+            <div class="daycoast">
+              <div class="mincoast">
+                От 0
+              </div>
+              <div class="maxcoast">
+                До 3000
+              </div>
+              <div class="range">
+
+              </div>
+              <input type="submit" id="send" name="send" value="Отправить">
+            </div>
+           </form>
         </section>
         <section class="sort">
-
+          <h2 class="visually-hidden">Сортировка</h2>
+          <div class="preferences-result">
+            <h3>Найдено: 3</h3>
+          </div>
+          <div class="sort-types">
+            <ul class="sort-by">
+              <li>
+                <a href="#">По цене</a>
+              </li>
+              <li>
+                <a href="#">По типу</a>
+              </li>
+              <li>
+                <a href="#">По рейтингу</a>
+              </li>
+            </ul>
+          </div>
+          <div class="sort-direction">
+            <a href="#"><img src="img/arrow-up.svg" height="10" width="11" alt="От большего к меньшему"></a>
+            <a href="#"><img src="img/arrow-down.svg" height="10" width="11" alt="От меньшего к большему"></a>
+          </div>
         </section>
         <section>
             <ul>
                 <li>
                     <h3>
-                     <a href="sedona-hotel.html">
+                     <a href="amara-resort-info.html">
                         <span>Amara resort & spa</span>
                     </a>
                 </h3>
-                <p> Гостиница от 4000 Р.</p>
+                <p> 
+                  <div class="hotel-type">
+                    Гостиница
+                  </div>
+                  <div class="min-coast">
+                  от 4000 Р.
+                  </div>
+                </p>
                 <p>
-                    <a href="sedona-hotel.html">
+                    <a href="amara-resort-info.html">
                         <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
                     </a>
                 </p>
                 <p>
-                  <a href="sedona-hotel.html">Подробнее</a>
-                  <a href="sedona-reserve.html">Забронировать</a>  
+                  <a href="amara-resort-info.html"  class="more">Подробнее</a>
+                  <a href="amaraa-resort-reserve.html" class="reserve">Забронировать</a>  
                 </p>
                 <p>
                    <img src="img/star.svg" alt="Четрые зведзды"> 
@@ -55,19 +108,25 @@
                 </li>        
                 <li>
                     <h3>
-                        <a href="sedona-hotel.html">
+                        <a href="desert-qual-info.html">
                             <span>Desert quail inn</span>
                         </a>
                     </h3>
-                    <p> Гостиница от 3000 Р.</p>
                     <p>
-                        <a href="sedona-hotel.html">
+                      <div class="hotel-type">
+                      Мотель
+                      </div>
+                      <div class="min-coast">
+                      от 3000 Р.
+                      </div></p>
+                    <p>
+                        <a href="desert-qual-info.html">
                             <img src="img/desert-qual.jpg" width="135" height="90" alt="desert quail inn">
                         </a>
                     </p>
                     <p>
-                      <a href="sedona-hotel.html">Подробнее</a>
-                      <a href="sedona-reserve.html">Забронировать</a>  
+                        <a href="desert-qual-info.html"  class="more">Подробнее</a>
+                        <a href="desert-qual-reserve.html" class="reserve">Забронировать</a>  
                     </p>
                     <p>
                        <img src="img/star.svg" alt="Три зведзды">
@@ -80,19 +139,25 @@
                 </li>
                 <li>
                         <h3>
-                            <a href="sedona-hotel.html">
+                            <a href="poco-diablo-info.html">
                                 <span>Villas at poco diablo</span>
                             </a>
                         </h3>
-                        <p> Гостиница от 2000 Р.</p>
                         <p>
-                            <a href="sedona-hotel.html">
+                          <div class="hotel-type">
+                          Апартаменты
+                          </div>
+                          <div class="min-coast">
+                          от 2000 Р.
+                          </div></p>
+                        <p>
+                            <a href="poco-diablo-info.html">
                                 <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
                             </a>
                         </p>
                         <p>
-                          <a href="sedona-hotel.html">Подробнее</a>
-                          <a href="sedona-reserve.html">Забронировать</a>  
+                            <a href="poco-diablo-info.html"  class="more">Подробнее</a>
+                            <a href="poco-diablo-reserve.html" class="reserve">Забронировать</a>  
                         </p>
                         <p>
                            <img src="img/star.svg" alt="Две зведзды"> 
