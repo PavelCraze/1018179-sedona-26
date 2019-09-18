@@ -7,19 +7,19 @@
   <body>
     <header>
       <nav>
-        <a>
+        <a href="#">
           <img src="img/sedona-logo.svg" width="143" height="71" alt="Логотип Седона">
         </a>
         <ul>
           <li><a href="info.html">Информация</a></li>
           <li><a href="galery.html">Фото-видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+          <li><a href="sedona-hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <h1>Город Седона</h1>
+      <h1 class="visually-hidden">Город Седона</h1>
       <section class="intro-images">
        <img src="img/sedona.jpg" alt="Главный баннер Седона">
        <img src="img/sedona-mask.svg">
@@ -126,7 +126,37 @@
       </p>
       <div>
         <h2>Поиск гостиницы в седоне</h2>
-        <!--Здесь будет форма-->
+        <form action="https://echo.htmlacademy.ru" method="POST">
+         <p>
+           <label for="check-in-date">Дата заезда:</label>
+           <input id="check-in-date" type="text" name="indate" value="" placeholder="27 апреля 2017">
+         </p>
+         <p>
+           <label for="check-out-date">Дата выезда:</label>
+           <input id="check-out-date" type="text" name="outdate" value="" placeholder="4 июля 2017">
+         </p>
+         <p>
+         <label for="adults">Взрослые:</label>
+         <button  type="button" class="icon-minus">
+
+         </button>
+         <input id="adults" type="text" value="2">
+         <button type="button" class="icon-plus">
+
+         </button>
+         <label for="children">Дети:</label>
+         <button type="button" class="icon-minus">
+
+         </button>
+         <input id="children" type="text" value="0">
+         <button type="button" class="icon-plus">
+
+         </button>
+        </p>
+        <p>
+          <button type="submit" class="submit">Найти</button>
+        </p>
+        </form>
       </div>
       </section>
       <section class="map">
@@ -136,7 +166,11 @@
       </section>
      </main>
     <footer>
-      <p>#VISITSEDONA</p>
+      <p>
+        <a href="#">
+          #VISITSEDONA
+        </a>
+      </p>
       <div class="contacts">
       <ul>
         <li><a href="#"><img src="img/twitter.svg" width="20" height="20" alt="Twitter"></a></li>
