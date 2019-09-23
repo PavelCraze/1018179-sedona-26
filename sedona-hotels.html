@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+      </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html">
-          <img src="img/sedona-logo.svg" width="143" height="71" alt="Логотип Седона">
-        </a>
-        <ul>
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="galery.html">Фото-видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
-      </nav>
+        <header class="main-header">
+            <nav class="main-navigation">
+              <a class="main-header-logo" href="index.html">
+                <img src="img/sedona-logo.svg" width="143" height="71" alt="Логотип Седона">
+              </a>
+              <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="galery.html">Фото-видео</a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="sedona-hotels.html">Гостиницы</a></li>
+              </ul>
+            </nav>
     </header>
     <main>
         <section class="preferences">
@@ -44,7 +48,7 @@
               <div class="range">
 
               </div>
-              <input type="submit" id="send" name="send" value="Отправить">
+              <input class="apply-preferences" type="submit" id="send" name="send" value="Показать">
             </div>
            </form>
         </section>
@@ -71,11 +75,11 @@
             <a href="#"><img src="img/arrow-down.svg" height="10" width="11" alt="От меньшего к большему"></a>
           </div>
         </section>
-        <section>
-            <ul>
+        <section class="sort-result"> 
+            <ul class="hotels">
                 <li>
                     <h3>
-                     <a href="amara-resort-info.html">
+                     <a class="hotel-result" href="amara-resort-info.html">
                         <span>Amara resort & spa</span>
                     </a>
                 </h3>
@@ -88,7 +92,7 @@
                   </div>
                 </p>
                 <p>
-                    <a href="amara-resort-info.html">
+                    <a class="hotel-result" href="amara-resort-info.html">
                         <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
                     </a>
                 </p>
@@ -108,7 +112,7 @@
                 </li>        
                 <li>
                     <h3>
-                        <a href="desert-qual-info.html">
+                        <a class="hotel-result" href="desert-qual-info.html">
                             <span>Desert quail inn</span>
                         </a>
                     </h3>
@@ -139,7 +143,7 @@
                 </li>
                 <li>
                         <h3>
-                            <a href="poco-diablo-info.html">
+                            <a class="hotel-result" href="poco-diablo-info.html">
                                 <span>Villas at poco diablo</span>
                             </a>
                         </h3>
@@ -171,19 +175,23 @@
             </ul>
     </section> 
     </main>
-    <footer>
-      <p>#VISITSEDONA</p>
-      <div class="contacts">
-      <ul>
-        <li><a href="#"><img src="img/twitter.svg" width="20" height="20" alt="Twitter"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="20" height="20" alt="Facebook"></a></li>
-        <li><a href="#"><img src="img/youtube.svg" width="20" height="20" alt="Youtube"></a></li>
-      </ul>
-      </div>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-      Website by
-      <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="htmlacademy">
-    </a>
-    </footer>
+    <footer class="main-footer">
+        <p>
+          <a class="footer-hashtag" href="#">
+            #VISITSEDONA
+          </a>
+        </p>
+        <div class="footer-contacts">
+        <ul>
+          <li class="social-button"><a href="#"><img src="img/twitter.svg" width="20" height="20" alt="Twitter"></a></li>
+          <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="20" height="20" alt="Facebook"></a></li>
+          <li class="social-button"><a href="#"><img src="img/youtube.svg" width="20" height="20" alt="Youtube"></a></li>
+        </ul>
+        </div>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        Website by
+        <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="htmlacademy">
+      </a>
+      </footer>
     </body>
 </html>
