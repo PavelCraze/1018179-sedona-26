@@ -24,6 +24,7 @@ a{
     font-size: 14px;
     line-height: 26px;
     color: #000000;
+    
 
     background-color: #ffffff;
 }
@@ -36,6 +37,9 @@ a{
 .site-navigation a:hover,
 .site-navigation a:focus{
     color: #00bfff;
+}
+.site-navigation a:active{
+    color: #b7b7b7;
 }
 .reasons{
     list-style: none;
@@ -52,4 +56,123 @@ a{
 }
 .features{
     list-style: none;
+}
+.reason-blue{
+    background-color: #81b3d2;     
+}
+.reason-gray{
+    background-color: #eeeeee;
+}
+.features-image{
+    background-color: #e8bfad;
+}
+.hotel-search{
+    background-color: #ffffff;
+
+}
+.open-search{
+    color: #ffffff;
+    background-color: #766357;
+    border: none;
+}
+.hotel-search input[type="text"]{
+    font: inherit;
+    color: #000000;
+    text-transform: uppercase;
+    background-color: #f2f2f2;
+    border: none;
+}
+.hotel-search input[type="text"] :hover{
+    background-color: #ebebeb;
+    border: none;
+}
+.hotel-search input[type="text"] :focus{
+    background-color: #ffffff;
+    border: none;
+}
+.submit{
+    font: inherit;
+    color: #ffffff;
+    background-color: #81b3d2;
+    border: none;
+}
+.submit:hover,
+.submit :focus{
+    background-color: #669ec0;
+}
+.submit:active{
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+.main-footer{
+    color:#000000;
+    background-color: #eaeaea;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.main-footer a{
+    color: #000000;
+}
+.footer-contacts{
+    text-align: center;
+}
+.social-button{
+    background-color: #81b3d2;
+    list-style: none;
+}
+.social-button:hover,
+.social-button:focus{
+    background-color: #669ec0;
+}
+.social-button:active{
+    background-color: #5496bd;
+    color: #88b6d1;
+}
+
+
+.main-footer a:hover,
+.main-footer a:focus{
+    color: #81b3d2;
+}
+.main-footer a:active{
+    color: #bdbbbc;
+}
+.preferences{
+    background-color: #6b8dab;
+    color: #ffffff;
+}
+.apply-preferences{
+    background-color: transparent;
+    font: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px #ffffff solid;
+}
+.sort{
+    background-color: #fefefe;
+}
+.sort a{
+    color: #000000;
+}
+.sort-by{
+    list-style: none;
+}
+.hotels{
+    list-style: none;
+}
+.sort-result hotel-result{
+    color: #000000;
+}
+.more{
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+.reserve{
+    background-color: #766357;
+    color: #ffffff;
+}
+.rating{
+    background-color: #f2f2f2;
+    color: #828282;
 }
