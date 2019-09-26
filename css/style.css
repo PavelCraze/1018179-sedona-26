@@ -8,11 +8,6 @@ body{
     font-weight: 700;
     color: #000000;
     text-transform: uppercase;
-
-    background-color: #ffffff;
-    background-image: url("img/sedona-welome.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 img{
     max-width: 100%;
@@ -20,12 +15,10 @@ img{
 a{
     text-decoration: none;
 }
-.main-navigation{
+.navigation{
     font-size: 14px;
     line-height: 26px;
     color: #000000;
-    
-
     background-color: #ffffff;
 }
 .site-navigation{
@@ -82,11 +75,11 @@ a{
     background-color: #f2f2f2;
     border: none;
 }
-.hotel-search input[type="text"] :hover{
+.hotel-search input[type="text"]:hover{
     background-color: #ebebeb;
     border: none;
 }
-.hotel-search input[type="text"] :focus{
+.hotel-search input[type="text"]:focus{
     background-color: #ffffff;
     border: none;
 }
@@ -97,7 +90,7 @@ a{
     border: none;
 }
 .submit:hover,
-.submit :focus{
+.submit:focus{
     background-color: #669ec0;
 }
 .submit:active{
@@ -110,10 +103,10 @@ a{
     background-position: 0 0;
     background-repeat: repeat;
 }
-.main-footer a{
+.footer a{
     color: #000000;
 }
-.footer-contacts{
+.contacts{
     text-align: center;
 }
 .social-button{
@@ -128,13 +121,11 @@ a{
     background-color: #5496bd;
     color: #88b6d1;
 }
-
-
-.main-footer a:hover,
-.main-footer a:focus{
+.footer a:hover,
+.footer a:focus{
     color: #81b3d2;
 }
-.main-footer a:active{
+.footer a:active{
     color: #bdbbbc;
 }
 .preferences{
@@ -176,6 +167,37 @@ a{
     background-color: #f2f2f2;
     color: #828282;
 }
-.visually-hidden{
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
+
+
+    html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url('img/sedona-index-grid.jpg');
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  margin-bottom: 75px;
+
+  /* Временно для сетки */
+  min-height: 285px;
 }
