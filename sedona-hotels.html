@@ -9,9 +9,9 @@
       </head>
   <body>
     <header>
-        <header class="main-header">
-            <nav class="main-navigation">
-              <a class="main-header-logo" href="index.html">
+        <header class="header">
+            <nav class="navigation">
+              <a class="header-logo" href="index.html">
                 <img src="img/sedona-logo.svg" width="143" height="71" alt="Логотип Седона">
               </a>
               <ul class="site-navigation">
@@ -26,19 +26,19 @@
         <section class="preferences">
           <h2 class="visually-hidden">Предпочтения</h2>
           <form action="https://echo.htmlacademy.ru" method="POST">
-            <div class="checkboxes">
-              <p>Инфраструктура:</p>
-              <p><input type="checkbox" name="pool" value="pool" checked>Бассейн</p>
-              <p><input type="checkbox" name="parking" value="parking">Парковка</p>
-              <p><input type="checkbox" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</p>
-            </div>
-            <div class="checkboxes">
-              <p>Тип жилья:</p>
-              <p><input type="checkbox" name="hotel" value="hotel" checked>Гостиница</p>
-              <p><input type="checkbox" name="motel" value="motel" checked>Мотель</p>
-              <p><input type="checkbox" name="apartaments" value="apartaments" checked>Апартаменты</p>
-            </div>
-            <div class="daycoast">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <label><input type="checkbox" name="pool" value="pool" checked>Бассейн</label>
+              <label><input type="checkbox" name="parking" value="parking">Парковка</label>
+              <label><input type="checkbox" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</label>
+            </fieldset>
+            <fieldset>
+              <legend>Тип жилья:</legend>
+              <label><input type="checkbox" name="hotel" value="hotel" checked>Гостиница</label>
+              <label><input type="checkbox" name="motel" value="motel" checked>Мотель</label>
+              <label><input type="checkbox" name="apartaments" value="apartaments" checked>Апартаменты</label>
+            </fieldset>
+            <fieldset class="daycoast">
               <div class="mincoast">
                 От 0
               </div>
@@ -49,7 +49,7 @@
 
               </div>
               <input class="apply-preferences" type="submit" id="send" name="send" value="Показать">
-            </div>
+            </fieldset>
            </form>
         </section>
         <section class="sort">
@@ -57,7 +57,6 @@
           <div class="preferences-result">
             <h3>Найдено: 3</h3>
           </div>
-          <div class="sort-types">
             <ul class="sort-by">
               <li>
                 <a href="#">По цене</a>
@@ -69,7 +68,6 @@
                 <a href="#">По рейтингу</a>
               </li>
             </ul>
-          </div>
           <div class="sort-direction">
             <a href="#"><img src="img/arrow-up.svg" height="10" width="11" alt="От большего к меньшему"></a>
             <a href="#"><img src="img/arrow-down.svg" height="10" width="11" alt="От меньшего к большему"></a>
@@ -175,23 +173,19 @@
             </ul>
     </section> 
     </main>
-    <footer class="main-footer">
-        <p>
-          <a class="footer-hashtag" href="#">
-            #VISITSEDONA
-          </a>
-        </p>
-        <div class="footer-contacts">
-        <ul>
-          <li class="social-button"><a href="#"><img src="img/twitter.svg" width="20" height="20" alt="Twitter"></a></li>
-          <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="20" height="20" alt="Facebook"></a></li>
-          <li class="social-button"><a href="#"><img src="img/youtube.svg" width="20" height="20" alt="Youtube"></a></li>
-        </ul>
-        </div>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-        Website by
-        <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="htmlacademy">
+    <footer class="footer">
+      <a class="footer-hashtag" href="#">
+        #VISITSEDONA
       </a>
-      </footer>
+    <ul class="contacts">
+      <li class="social-button"><a href="#"><img src="img/twitter.svg" width="20" height="20" alt="Twitter"></a></li>
+      <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="20" height="20" alt="Facebook"></a></li>
+      <li class="social-button"><a href="#"><img src="img/youtube.svg" width="20" height="20" alt="Youtube"></a></li>
+    </ul>
+    <a href="https://htmlacademy.ru/intensive/htmlcss">
+    Website by
+    <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="htmlacademy">
+  </a>
+  </footer>
     </body>
 </html>
