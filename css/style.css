@@ -15,46 +15,86 @@ img{
 a{
     text-decoration: none;
 }
+<<<<<<< HEAD
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+=======
+>>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
 .navigation{
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     background-color: #ffffff;
+    position: relative;
 }
-.site-navigation{
+.navigation-list{
     list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
-.site-navigation a{
+.navigation-link{
     color: #000000;
 }
-.site-navigation a:hover,
-.site-navigation a:focus{
+.navigation-link:hover,
+.navigation-link:focus{
     color: #00bfff;
 }
-.site-navigation a:active{
+.navigation-link:active{
     color: #b7b7b7;
 }
-.reasons{
-    list-style: none;
+.navigation-item{
+    width: 20%;
+    display: flex;
+    justify-content: center;
 }
-.reason-blue,
-.reason-gray{
+.navigation-item:nth-child(2){
+    margin-right: 20%;
+}
+.header-logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.reasons-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.reason-content{
     font-size: 14px;
     text-align: center;
+    width: 400px;
 }
-.reason-blue h2,
-.reason-gray h2{
+.reason-content h2{
     font-size: 21px;
     line-height: 21px;
 }
-.features{
+.features-list{
     list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
-.reason-blue{
-    background-color: #81b3d2;     
+.feature-item{
+    width: 400px;
+    background-color: #fff;
 }
-.reason-gray{
+.reason-item-blue{
+    background-color: #81b3d2;
+    width: 100%;  
+    display: flex;
+    flex-wrap: wrap;   
+}
+.reason-item-gray{
     background-color: #eeeeee;
+    width: 400px;
 }
 .features-image{
     background-color: #e8bfad;
@@ -97,7 +137,7 @@ a{
     background-color: #5496bd;
     color: #88b6d1;
 }
-.main-footer{
+.footer{
     color:#000000;
     background-color: #eaeaea;
     background-position: 0 0;
@@ -121,6 +161,11 @@ a{
     background-color: #5496bd;
     color: #88b6d1;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
 .footer a:hover,
 .footer a:focus{
     color: #81b3d2;
@@ -180,13 +225,8 @@ a{
     clip: rect(0 0 0 0);
     overflow: hidden;
     }
+<<<<<<< HEAD
 
-
-    html,
-body {
-  min-width: 1122px;
-  min-height: 1750px;
-}
 
 body {
   /* Временно для сетки */
@@ -201,3 +241,25 @@ body {
   /* Временно для сетки */
   min-height: 285px;
 }
+=======
+/* ----- Сеточные стили ----- */
+
+
+html,
+body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url('../img/sedona-index.jpg');
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.header{
+    margin-bottom: 75px;
+    background-color: #00bfff;
+}
+>>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
