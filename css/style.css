@@ -15,16 +15,12 @@ img{
 a{
     text-decoration: none;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .container{
     width: 1200px;
     margin: 0 auto;
 }
-=======
->>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
-=======
->>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
+
 .navigation{
     font-size: 14px;
     line-height: 26px;
@@ -61,6 +57,9 @@ a{
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
+}
+.reasons{
+    text-align: center;
 }
 .reasons-list{
     list-style: none;
@@ -149,8 +148,15 @@ a{
 .footer a{
     color: #000000;
 }
-.contacts{
+.contacts-list{
     text-align: center;
+    justify-content: center;
+}
+.signature{
+    justify-content: flex-end;
+}
+.hashtag{
+    justify-content: flex-start;
 }
 .social-button{
     background-color: #81b3d2;
@@ -164,14 +170,6 @@ a{
     background-color: #5496bd;
     color: #88b6d1;
 }
-<<<<<<< HEAD
-=======
-
-
-<<<<<<< HEAD
->>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
-=======
->>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
 .footer a:hover,
 .footer a:focus{
     color: #81b3d2;
@@ -231,48 +229,3 @@ a{
     clip: rect(0 0 0 0);
     overflow: hidden;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-body {
-  /* Временно для сетки */
-  background-image: url('img/sedona-index-grid.jpg');
-  background-size: 1372px auto;
-  background-repeat: no-repeat;
-}
-
-.main-header {
-  margin-bottom: 75px;
-
-  /* Временно для сетки */
-  min-height: 285px;
-}
-=======
-=======
->>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
-/* ----- Сеточные стили ----- */
-
-
-html,
-body {
-  min-width: 1122px;
-  min-height: 1750px;
-}
-
-body {
-  /* Временно для сетки */
-  background-image: url('../img/sedona-index.jpg');
-  background-size: 1372px auto;
-  background-repeat: no-repeat;
-  background-position-x: center;
-}
-.header{
-    margin-bottom: 75px;
-    background-color: #00bfff;
-<<<<<<< HEAD
-}
->>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
-=======
-}
->>>>>>> b7b5a5ab2710f97a086cc25ca2de9bd86d88a4c0
