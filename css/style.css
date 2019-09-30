@@ -19,6 +19,7 @@ a{
 .container{
     width: 1200px;
     margin: 0 auto;
+    background-color: #fff;
 }
 .header{
     margin: 0 auto;
@@ -72,6 +73,8 @@ a{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
+    height: 1057px;
+    justify-content: space-between;
 }
 .reason-content{
     font-size: 14px;
@@ -106,11 +109,19 @@ a{
 .features-image{
     background-color: #e8bfad;
 }
-.hotel-search{
+.search-hotels {
+    display: flex;
+    flex-direction: column;
+    width: 568px;
+    margin: auto;
+    padding-right: 316px;
+    padding-left: 316px;
+    text-align: center;
     background-color: #ffffff;
-
+    justify-content: space-around;
+    align-items: center;
 }
-.open-search{
+.search-button{
     color: #ffffff;
     background-color: #766357;
     border: none;
@@ -144,28 +155,31 @@ a{
     background-color: #5496bd;
     color: #88b6d1;
 }
-.footer{
-    color:#000000;
-    background-color: #eaeaea;
-    background-position: 0 0;
-    background-repeat: repeat;
+.footer {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 123px;
+    background-color: #ffffff;
+    justify-content: space-around;
+    align-items: center;
 }
 .footer a{
     color: #000000;
 }
 .contacts-list{
+    display: flex;
     text-align: center;
     justify-content: center;
 }
+
 .social-button{
     background-color: #81b3d2;
     list-style: none;
 }
 .social-button:hover,
 .social-button:focus{
-    background-color: #669ec0;
+    background-color: #3e89b8;
 }
 .social-button:active{
     background-color: #5496bd;
@@ -179,8 +193,12 @@ a{
     color: #bdbbbc;
 }
 .preferences{
+    width: 100%;
     background-color: #6b8dab;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .apply-preferences{
     background-color: transparent;
@@ -192,23 +210,43 @@ a{
 }
 .sort{
     background-color: #fefefe;
+    display: flex;
+    justify-content: space-between;
+    height: 87px;
+    width: 100%;
 }
 .sort a{
     color: #000000;
 }
 .sort-by{
     list-style: none;
+    display: flex;
 }
-.hotels{
+.sort-direction{
+    display: flex;
+}
+.hotels-list{
     list-style: none;
+    display: flex;
+    flex-direction: column;
 }
-.sort-result hotel-result{
-    color: #000000;
+.hotel-item{
+    display: flex;
+    padding-right: 72px;
+    padding-left: 72px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    height: 152px;
+
+}
+.hotel-image{
+    align-content: flex-start;   
 }
 .more{
     background-color: #81b3d2;
     color: #ffffff;
 }
+
 .reserve{
     background-color: #766357;
     color: #ffffff;
