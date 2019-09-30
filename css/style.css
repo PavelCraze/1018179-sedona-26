@@ -7,6 +7,7 @@ body{
     line-height: 24px;
     font-weight: 700;
     color: #000000;
+    background-color: #f2f2f2;
     text-transform: uppercase;
 }
 img{
@@ -15,18 +16,21 @@ img{
 a{
     text-decoration: none;
 }
-
 .container{
     width: 1200px;
     margin: 0 auto;
 }
-
+.header{
+    margin: 0 auto;
+    height: 56px;
+}
 .navigation{
     font-size: 14px;
     line-height: 26px;
     color: #000000;
     background-color: #ffffff;
     position: relative;
+    height: inherit;
 }
 .navigation-list{
     list-style: none;
@@ -36,6 +40,7 @@ a{
 }
 .navigation-link{
     color: #000000;
+    margin-top: 5%;
 }
 .navigation-link:hover,
 .navigation-link:focus{
@@ -144,6 +149,8 @@ a{
     background-color: #eaeaea;
     background-position: 0 0;
     background-repeat: repeat;
+    display: flex;
+    flex-direction: row;
 }
 .footer a{
     color: #000000;
@@ -151,12 +158,6 @@ a{
 .contacts-list{
     text-align: center;
     justify-content: center;
-}
-.signature{
-    justify-content: flex-end;
-}
-.hashtag{
-    justify-content: flex-start;
 }
 .social-button{
     background-color: #81b3d2;
