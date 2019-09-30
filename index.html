@@ -110,17 +110,20 @@
           </div>
         </li>
       </ol>
-      </section class="search-hotels">
-      <section>
+      </section>
+      <section  class="search-hotels">
       <h2>Заинтересовались?</h2>
       <p>Укажите предпологаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <div class="hotel-search">
-        <button class="open-search">
+        <button class="search-button">
         <h2>Поиск гостиницы в седоне</h2>
         </button>
-        <form action="https://echo.htmlacademy.ru" method="POST">
+      </section>
+        <section class="map"></section>
+        <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset>
          <p>
            <label for="check-in-date">Дата заезда:</label>
            <input id="check-in-date" type="text" name="indate" value="" placeholder="27 апреля 2017">
@@ -150,12 +153,11 @@
         <p>
           <button type="submit" class="submit">Найти</button>
         </p>
+        </fieldset>
         </form>
       </div>
-      </section>
-      <section class="map">
         <div>
-          <img src="img/sedona-map.png">
+          <img class="map" src="img/sedona-map.png">
         </div>
       </section>
      </main>
@@ -163,7 +165,7 @@
         <a class="footer-hashtag" href="#">
           #VISITSEDONA
         </a>
-      <ul class="contacts">
+      <ul class="contacts-list">
         <li class="social-button"><a href="#"><img src="img/twitter.svg" width="20" height="20" alt="Twitter"></a></li>
         <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="20" height="20" alt="Facebook"></a></li>
         <li class="social-button"><a href="#"><img src="img/youtube.svg" width="20" height="20" alt="Youtube"></a></li>
