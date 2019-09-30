@@ -8,31 +8,31 @@
         <link href="css/style.css" rel="stylesheet">
       </head>
   <body>
-    <header>
+    <div class="container">
         <header class="header">
             <nav class="navigation">
               <a class="header-logo" href="index.html">
                 <img src="img/sedona-logo.svg" width="143" height="71" alt="Логотип Седона">
               </a>
-              <ul class="site-navigation">
-                <li><a href="info.html">Информация</a></li>
-                <li><a href="galery.html">Фото-видео</a></li>
-                <li><a href="map.html">Карта штата</a></li>
-                <li><a href="sedona-hotels.html">Гостиницы</a></li>
+              <ul class="navigation-list">
+                <li class="navigation-item"><a class="navigation-link" href="info.html">Информация</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="galery.html">Фото-видео</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="map.html">Карта штата</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="sedona-hotels.html">Гостиницы</a></li>
               </ul>
             </nav>
-    </header>
+          </header>
     <main>
         <section class="preferences">
           <h2 class="visually-hidden">Предпочтения</h2>
           <form action="https://echo.htmlacademy.ru" method="POST">
             <fieldset>
-              <legend>Инфраструктура:</legend>
+              <legend class="structure">Инфраструктура:</legend>
               <label><input type="checkbox" name="pool" value="pool" checked>Бассейн</label>
               <label><input type="checkbox" name="parking" value="parking">Парковка</label>
               <label><input type="checkbox" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</label>
             </fieldset>
-            <fieldset>
+            <fieldset class="hotel-type">
               <legend>Тип жилья:</legend>
               <label><input type="checkbox" name="hotel" value="hotel" checked>Гостиница</label>
               <label><input type="checkbox" name="motel" value="motel" checked>Мотель</label>
@@ -74,26 +74,23 @@
           </div>
         </section>
         <section class="sort-result"> 
-            <ul class="hotels">
-                <li>
+            <ul class="hotels-list">
+                <li class="hotel-item">
                     <h3>
                      <a class="hotel-result" href="amara-resort-info.html">
                         <span>Amara resort & spa</span>
                     </a>
                 </h3>
-                <p> 
-                  <div class="hotel-type">
+                  <div>
                     Гостиница
                   </div>
                   <div class="min-coast">
                   от 4000 Р.
                   </div>
-                </p>
-                <p>
-                    <a class="hotel-result" href="amara-resort-info.html">
+                  <a class="hotel-image" href="amara-resort-info.html">
                         <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
-                    </a>
-                </p>
+                  </a>
+                
                 <p>
                   <a href="amara-resort-info.html"  class="more">Подробнее</a>
                   <a href="amaraa-resort-reserve.html" class="reserve">Забронировать</a>  
@@ -104,25 +101,25 @@
                    <img src="img/star.svg" alt="Четрые зведзды"> 
                    <img src="img/star.svg" alt="Четрые зведзды"> 
                 </p>
-                <p class="rating">
+                <span class="rating">
                     Рейтинг: 8,5
-                </p>
+                </span>
                 </li>        
-                <li>
+                <li li class="hotel-item">
                     <h3>
                         <a class="hotel-result" href="desert-qual-info.html">
                             <span>Desert quail inn</span>
                         </a>
                     </h3>
                     <p>
-                      <div class="hotel-type">
+                      <div>
                       Мотель
                       </div>
                       <div class="min-coast">
                       от 3000 Р.
                       </div></p>
                     <p>
-                        <a href="desert-qual-info.html">
+                        <a class="hotel-image" href="desert-qual-info.html">
                             <img src="img/desert-qual.jpg" width="135" height="90" alt="desert quail inn">
                         </a>
                     </p>
@@ -135,25 +132,25 @@
                        <img src="img/star.svg" alt="Три зведзды"> 
                        <img src="img/star.svg" alt="Три зведзды">  
                     </p>
-                    <p class="rating">
+                    <span class="rating">
                         Рейтинг: 8,9
-                    </p>    
+                    </span>    
                 </li>
-                <li>
+                <li li class="hotel-item">
                         <h3>
-                            <a class="hotel-result" href="poco-diablo-info.html">
+                            <a  class="hotel-result" href="poco-diablo-info.html">
                                 <span>Villas at poco diablo</span>
                             </a>
                         </h3>
                         <p>
-                          <div class="hotel-type">
+                          <div>
                           Апартаменты
                           </div>
                           <div class="min-coast">
                           от 2000 Р.
                           </div></p>
                         <p>
-                            <a href="poco-diablo-info.html">
+                            <a class="hotel-image" href="poco-diablo-info.html">
                                 <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
                             </a>
                         </p>
@@ -165,9 +162,9 @@
                            <img src="img/star.svg" alt="Две зведзды"> 
                            <img src="img/star.svg" alt="Две зведзды"> 
                         </p>
-                        <p class="rating">
+                        <span class="rating">
                             Рейтинг: 9,2
-                        </p>
+                        </span>
         
                 </li>
             </ul>
@@ -187,5 +184,6 @@
     <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="htmlacademy">
   </a>
   </footer>
+</div>
     </body>
 </html>
