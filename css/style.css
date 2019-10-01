@@ -73,8 +73,10 @@ a{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    height: 1057px;
     justify-content: space-between;
+    height: 1100px;
+    align-items: stretch;
+
 }
 .reason-content{
     font-size: 14px;
@@ -95,17 +97,27 @@ a{
 .feature-item{
     width: 400px;
     background-color: #fff;
+    height: 330px;
+    margin: 0 0;
+    color: #000000;
+    text-align: center;
 }
 .reason-item-blue{
     background-color: #81b3d2;
     width: 100%;  
     display: flex;
     flex-wrap: wrap;
-    color: #fff;   
+    color: #fff;  
+    margin: 0 0;
+    padding: 0 0;
+    height: 256px;
 }
 .reason-item-gray{
     background-color: #eeeeee;
     width: 400px;
+    margin: 0 0;
+    padding: 0 0;
+    height: 256px;;
 }
 .features-image{
     background-color: #e8bfad;
@@ -150,10 +162,6 @@ a{
     background-color: #ffffff;
     margin-bottom: 50px;
 }
-.map{
-    
-
-}
 .submit{
     font: inherit;
     color: #ffffff;
@@ -183,12 +191,17 @@ a{
 .contacts-list{
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
+    width: 150px;
+    margin: 0;
 }
 
 .social-button{
-    background-color: #81b3d2;
     list-style: none;
+    width: 46px;
+    height: 48px;
+    margin: 0 1px;
+    background: #81b3d2;
 }
 .social-button:hover,
 .social-button:focus{
@@ -202,6 +215,12 @@ a{
 .footer a:focus{
     color: #81b3d2;
 }
+.hashtag{
+    line-height: 26px;
+}
+.copyright{
+    vertical-align: middle;
+}
 .footer a:active{
     color: #bdbbbc;
 }
@@ -209,6 +228,10 @@ a{
     width: 100%;
     background-color: #6b8dab;
     color: #ffffff;
+}
+.preferences-result{
+    margin-left: 73px;
+
 }
 .preferences-field{
     display: flex;
@@ -232,16 +255,26 @@ a{
     justify-content: space-between;
     height: 87px;
     width: 100%;
+    align-items: center;
 }
 .sort a{
     color: #000000;
 }
-.sort-by{
+.sort-list{
     list-style: none;
     display: flex;
+    width: 240px;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 .sort-direction{
     display: flex;
+    align-items: center;
+}
+.sort-by{
+    left: 50%;
 }
 .hotels-list{
     list-style: none;
@@ -255,6 +288,7 @@ a{
     border-top: 1px solid #e5e5e5;
     background-color: #ffffff;
     height: 152px;
+    flex-wrap: wrap;
 
 }
 .hotel-image{
@@ -285,6 +319,21 @@ a{
     flex-direction: column;
     border: none;
 }
+.daycoast{
+    border: none;
+    width: 330px;
+    margin: 0 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
