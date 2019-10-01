@@ -39,32 +39,31 @@
               <label><input type="checkbox" class="hotel-type-item" name="apartaments" value="apartaments" checked>Апартаменты</label>
             </fieldset>
             <fieldset class="daycoast">
-              <div class="mincoast">
-                От 0
-              </div>
-              <div class="maxcoast">
-                До 3000
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="coast">
+                  <label class="mincoast">от <input type="text" name="min-coast" value="0"></label>
+                  <label class="maxcoast">до <input type="text" name="max-coast" value="3000"></label>
               </div>
               <div class="range">
-
+                  
               </div>
               <input class="apply-preferences" type="submit" id="send" name="send" value="Показать">
             </fieldset>
            </form>
         </section>
         <section class="sort">
-          <h2 class="visually-hidden">Сортировка</h2>
           <div class="preferences-result">
             <h3>Найдено: 3</h3>
           </div>
-            <ul class="sort-by">
-              <li>
+          <h3 class="sort-by">Сортировка:</h3>
+            <ul class="sort-list">
+              <li class="sort-item"> 
                 <a href="#">По цене</a>
               </li>
-              <li>
+              <li class="sort-item">
                 <a href="#">По типу</a>
               </li>
-              <li>
+              <li class="sort-item">
                 <a href="#">По рейтингу</a>
               </li>
             </ul>
@@ -76,6 +75,9 @@
         <section class="sort-result"> 
             <ul class="hotels-list">
                 <li class="hotel-item">
+                    <a class="hotel-image" href="amara-resort-info.html">
+                        <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
+                  </a>
                     <h3>
                      <a class="hotel-result" href="amara-resort-info.html">
                         <span>Amara resort & spa</span>
@@ -86,12 +88,8 @@
                   </div>
                   <div class="min-coast">
                   от 4000 Р.
-                  </div>
-                  <a class="hotel-image" href="amara-resort-info.html">
-                        <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
-                  </a>
-                
-                <p>
+                  </div>                
+
                   <a href="amara-resort-info.html"  class="more">Подробнее</a>
                   <a href="amaraa-resort-reserve.html" class="reserve">Забронировать</a>  
                 </p>
@@ -106,6 +104,11 @@
                 </span>
                 </li>        
                 <li li class="hotel-item">
+                    <p>
+                        <a class="hotel-image" href="desert-qual-info.html">
+                            <img src="img/desert-qual.jpg" width="135" height="90" alt="desert quail inn">
+                        </a>
+                    </p>
                     <h3>
                         <a class="hotel-result" href="desert-qual-info.html">
                             <span>Desert quail inn</span>
@@ -118,11 +121,7 @@
                       <div class="min-coast">
                       от 3000 Р.
                       </div></p>
-                    <p>
-                        <a class="hotel-image" href="desert-qual-info.html">
-                            <img src="img/desert-qual.jpg" width="135" height="90" alt="desert quail inn">
-                        </a>
-                    </p>
+                   
                     <p>
                         <a href="desert-qual-info.html"  class="more">Подробнее</a>
                         <a href="desert-qual-reserve.html" class="reserve">Забронировать</a>  
@@ -137,6 +136,11 @@
                     </span>    
                 </li>
                 <li li class="hotel-item">
+                    <p>
+                        <a class="hotel-image" href="poco-diablo-info.html">
+                            <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
+                        </a>
+                    </p>
                         <h3>
                             <a  class="hotel-result" href="poco-diablo-info.html">
                                 <span>Villas at poco diablo</span>
@@ -149,11 +153,7 @@
                           <div class="min-coast">
                           от 2000 Р.
                           </div></p>
-                        <p>
-                            <a class="hotel-image" href="poco-diablo-info.html">
-                                <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
-                            </a>
-                        </p>
+                        
                         <p>
                             <a href="poco-diablo-info.html"  class="more">Подробнее</a>
                             <a href="poco-diablo-reserve.html" class="reserve">Забронировать</a>  
