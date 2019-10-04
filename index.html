@@ -122,43 +122,48 @@
         <h2>Поиск гостиницы в седоне</h2>
         </button>
       </section>
-        <section>
+        <div class="map">
         <form class="open-search" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset>
-         <p>
+          <fieldset class="search-panel">
+         <div class="dates">
+           <div class="date-in">
            <label for="check-in-date">Дата заезда:</label>
-           <input id="check-in-date" type="text" name="indate" value="" placeholder="27 апреля 2017">
-         </p>
-         <p>
+           <input class="date-field" id="check-in-date" type="text" name="indate" value="" placeholder="27 апреля 2017">
+           </div>
+           <div class="date-out">
            <label for="check-out-date">Дата выезда:</label>
-           <input id="check-out-date" type="text" name="outdate" value="" placeholder="4 июля 2017">
-         </p>
-         <p>
+           <input class="date-field" id="check-out-date" type="text" name="outdate" value="" placeholder="4 июля 2017">
+           </div>
+         </div>
+         <div class="people-number">
+         <div class="adults-number">
          <label for="adults">Взрослые:</label>
          <button  type="button" class="icon-minus">
-
+           -
          </button>
-         <input id="adults" type="text" value="2">
+         <input class="people-number-field" id="adults" type="text" value="2">
          <button type="button" class="icon-plus">
-
+           +
          </button>
+         </div>
+         <div class="children-number">
          <label for="children">Дети:</label>
          <button type="button" class="icon-minus">
-
+           -
          </button>
-         <input id="children" type="text" value="0">
+         <input class="people-number-field" id="children" type="text" value="0">
          <button type="button" class="icon-plus">
-
+           +
          </button>
-        </p>
+         </div>
+        </div>
         <p>
           <button type="submit" class="submit">Найти</button>
         </p>
         </fieldset>
         </form>
+        <img class="map" src="img/sedona-map.png">   
       </div>
-          <img class="map" src="img/sedona-map.png">
-      </section>
      </main>
     <footer class="footer">
         <a class="footer-hashtag" href="#">
@@ -169,10 +174,12 @@
         <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="20" height="20" alt="Facebook"></a></li>
         <li class="social-button"><a href="#"><img src="img/youtube.svg" width="20" height="20" alt="Youtube"></a></li>
       </ul>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss">
+      <div class="copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
       Website by
       <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="htmlacademy">
-    </a>
+      </a>
+      </div>
     </footer>
   </div>
   </body>
