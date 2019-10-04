@@ -28,9 +28,9 @@
           <form class="preferences-field" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="structure-list">
               <legend>Инфраструктура:</legend>
-              <label><input type="checkbox" class="structure-item" name="pool" value="pool" checked>Бассейн</label>
-              <label><input type="checkbox" class="structure-item" name="parking" value="parking">Парковка</label>
-              <label><input type="checkbox" class="structure-item" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</label>
+              <label><input type="checkbox" class="structure-item-pool" name="pool" value="pool" checked>Бассейн</label>
+              <label><input type="checkbox" class="structure-item-parking" name="parking" value="parking">Парковка</label>
+              <label><input type="checkbox" class="structure-item-wifi" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</label>
             </fieldset>
             <fieldset class="hotel-type-list">
               <legend>Тип жилья:</legend>
@@ -76,114 +76,131 @@
             <ul class="hotels-list">
                 <li class="hotel-item">
                     <a class="hotel-image" href="amara-resort-info.html">
-                        <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
-                  </a>
-                    <h3>
-                     <a class="hotel-result" href="amara-resort-info.html">
+                     <img src="img/amara-resort.jpg" width="135" height="90" alt="Amara resort & spa">
+                    </a>
+                  <div class="hotel-info">
+                    <h3 class="hotel-name">
+                      <a class="hotel-result" href="amara-resort-info.html">
                         <span>Amara resort & spa</span>
                     </a>
-                </h3>
-                  <div>
-                    Гостиница
-                  </div>
-                  <div class="min-coast">
-                  от 4000 Р.
-                  </div>                
-
-                  <a href="amara-resort-info.html"  class="more">Подробнее</a>
-                  <a href="amaraa-resort-reserve.html" class="reserve">Забронировать</a>  
-                </p>
-                <p>
-                   <img src="img/star.svg" alt="Четрые зведзды"> 
-                   <img src="img/star.svg" alt="Четрые зведзды"> 
-                   <img src="img/star.svg" alt="Четрые зведзды"> 
-                   <img src="img/star.svg" alt="Четрые зведзды"> 
-                </p>
-                <span class="rating">
-                    Рейтинг: 8,5
-                </span>
-                </li>        
-                <li li class="hotel-item">
-                    <p>
-                        <a class="hotel-image" href="desert-qual-info.html">
-                            <img src="img/desert-qual.jpg" width="135" height="90" alt="desert quail inn">
-                        </a>
-                    </p>
-                    <h3>
-                        <a class="hotel-result" href="desert-qual-info.html">
-                            <span>Desert quail inn</span>
-                        </a>
                     </h3>
-                    <p>
-                      <div>
-                      Мотель
-                      </div>
-                      <div class="min-coast">
-                      от 3000 Р.
-                      </div></p>
-                   
-                    <p>
-                        <a href="desert-qual-info.html"  class="more">Подробнее</a>
-                        <a href="desert-qual-reserve.html" class="reserve">Забронировать</a>  
-                    </p>
-                    <p>
-                       <img src="img/star.svg" alt="Три зведзды">
-                       <img src="img/star.svg" alt="Три зведзды"> 
-                       <img src="img/star.svg" alt="Три зведзды">  
-                    </p>
+                    <div class="info-price">
+                    <div class="more">
+                      <span>
+                        Гостиница
+                      </span>
+                      <a href="amara-resort-info.html"  class="more-button">Подробнее</a>
+                    </div>
+                    <div class="reserve">
+                      <span >
+                      от 4000 Р.
+                      </span>
+                      <a href="amaraa-resort-reserve.html" class="reserve-button">Забронировать</a> 
+                    </div> 
+                    </div>
+                  </div>               
+                  <div class="hotel-rating">
+                    <div class="stars">
+                       <img src="img/star.svg" alt="Четрые зведзды"> 
+                       <img src="img/star.svg" alt="Четрые зведзды"> 
+                       <img src="img/star.svg" alt="Четрые зведзды"> 
+                      <img src="img/star.svg" alt="Четрые зведзды">
+                    </div> 
+                    <span class="rating">
+                        Рейтинг: 8,5
+                    </span>
+                  </div> 
+                </li> 
+                <li class="hotel-item">
+                    <a class="hotel-image" href="desert-qual-info.html">
+                     <img src="img/desert-qual.jpg" width="135" height="90" alt="Desert quail inn">
+                    </a>
+                  <div class="hotel-info">
+                    <h3 class="hotel-name">
+                      <a class="hotel-result" href="desert-qual-info.html">
+                        <span>Desert quail inn</span>
+                    </a>
+                    </h3>
+                    <div class="info-price">
+                    <div class="more">
+                      <span>
+                        Мотель
+                      </span>
+                      <a href="desert-qual-info.html"  class="more-button">Подробнее</a>
+                    </div>
+                    <div class="reserve">
+                      <span >
+                       от 3000 Р.
+                      </span>
+                      <a href="desert-qual-reserve.html" class="reserve-button">Забронировать</a> 
+                    </div> 
+                    </div>  
+                  </div>             
+                  <div class="hotel-rating">
+                    <div class="stars">
+                        <img src="img/star.svg" alt="Три зведзды">
+                        <img src="img/star.svg" alt="Три зведзды"> 
+                        <img src="img/star.svg" alt="Три зведзды"> 
+                    </div> 
                     <span class="rating">
                         Рейтинг: 8,9
-                    </span>    
+                    </span>
+                  </div> 
                 </li>
-                <li li class="hotel-item">
-                    <p>
-                        <a class="hotel-image" href="poco-diablo-info.html">
-                            <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
-                        </a>
-                    </p>
-                        <h3>
-                            <a  class="hotel-result" href="poco-diablo-info.html">
-                                <span>Villas at poco diablo</span>
-                            </a>
-                        </h3>
-                        <p>
-                          <div>
-                          Апартаменты
-                          </div>
-                          <div class="min-coast">
-                          от 2000 Р.
-                          </div></p>
-                        
-                        <p>
-                            <a href="poco-diablo-info.html"  class="more">Подробнее</a>
-                            <a href="poco-diablo-reserve.html" class="reserve">Забронировать</a>  
-                        </p>
-                        <p>
-                           <img src="img/star.svg" alt="Две зведзды"> 
-                           <img src="img/star.svg" alt="Две зведзды"> 
-                        </p>
-                        <span class="rating">
-                            Рейтинг: 9,2
-                        </span>
-        
-                </li>
+                <li class="hotel-item">
+                    <a class="hotel-image" href="poco-diablo-info.html">
+                     <img src="img/poco-diablo.jpg" width="135" height="90" alt="Villas at poco diablo">
+                    </a>
+                  <div class="hotel-info">
+                    <h3 class="hotel-name">
+                      <a class="hotel-result" href="poco-diablo-info.html">
+                        <span>Villas at poco diablo</span>
+                    </a>
+                    </h3>
+                    <div class="info-price">
+                    <div class="more">
+                      <span>
+                        Апартаменты
+                      </span>
+                      <a href="poco-diablo-info.html"  class="more-button">Подробнее</a>
+                    </div>
+                    <div class="reserve">
+                      <span >
+                       от 2000 Р.
+                      </span>
+                      <a href="poco-diablo-reserve.html" class="reserve-button">Забронировать</a> 
+                    </div> 
+                    </div>
+                  </div>               
+                  <div class="hotel-rating">
+                    <div class="stars">
+                        <img src="img/star.svg" alt="Две зведзды"> 
+                        <img src="img/star.svg" alt="Две зведзды"> 
+                    </div> 
+                    <span class="rating">
+                        Рейтинг: 9,2
+                    </span>
+                  </div> 
+                </li>  
             </ul>
     </section> 
     </main>
     <footer class="footer">
-      <a class="footer-hashtag" href="#">
-        #VISITSEDONA
+        <a class="footer-hashtag" href="#">
+          #VISITSEDONA
+        </a>
+      <ul class="contacts-list">
+        <li class="social-button"><a href="#"><img src="img/twitter.svg" width="20" height="20" alt="Twitter"></a></li>
+        <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="20" height="20" alt="Facebook"></a></li>
+        <li class="social-button"><a href="#"><img src="img/youtube.svg" width="20" height="20" alt="Youtube"></a></li>
+      </ul>
+      <div class="copyright">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      Website by
+      <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="htmlacademy">
       </a>
-    <ul class="contacts-list">
-      <li class="social-button"><a href="#"><img src="img/twitter.svg" width="20" height="20" alt="Twitter"></a></li>
-      <li class="social-button"><a href="#"><img src="img/fb-icon.svg" width="20" height="20" alt="Facebook"></a></li>
-      <li class="social-button"><a href="#"><img src="img/youtube.svg" width="20" height="20" alt="Youtube"></a></li>
-    </ul>
-    <a href="https://htmlacademy.ru/intensive/htmlcss">
-    Website by
-    <img src="img/htmlacademy-logo.svg" width="115" height="41" alt="htmlacademy">
-  </a>
-  </footer>
+      </div>
+    </footer>
 </div>
     </body>
 </html>
