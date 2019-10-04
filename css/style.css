@@ -215,11 +215,11 @@ a{
     text-transform: uppercase;
     padding: 0;
 }
-.icon-plus,
+.icon-plus:hover,
 .icon-minus:hover{
     color: #000000;
 }
-.icon-plus,
+.icon-plus:active,
 .icon-minus:active{
     color: #81b3d2;
 }
@@ -257,19 +257,21 @@ a{
 .contacts-list{
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 150px;
     margin-left: 256px;
     padding: 0;
 }
 .social-button{
+    display: flex;
     list-style: none;
     width: 46px;
     height: 48px;
     margin: 0 1px;
     background: #81b3d2;
-    text-align: center;
     align-items: center;
+    justify-content: center;
 }
 .social-button:hover,
 .social-button:focus{
@@ -287,11 +289,17 @@ a{
     line-height: 26px;
     margin-left: 132px;
     font-size: 21px;
-    font: bold;
 }
 .copyright{
+    display: flex;
     margin-left: 228px;
     vertical-align: middle;
+}
+.copyright-text{
+    display: block;
+    margin-right: 8px;
+    align-self: center;
+    margin-bottom: 8px;
 }
 .footer a:active{
     color: #bdbbbc;
