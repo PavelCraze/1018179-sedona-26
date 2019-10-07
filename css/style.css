@@ -12,6 +12,7 @@ body{
 }
 img{
     max-width: 100%;
+    height: auto;
 }
 a{
     text-decoration: none;
@@ -280,6 +281,9 @@ a{
 .social-button:active{
     background-color: #5496bd;
     color: #88b6d1;
+}
+.social-button a{
+    height: 20px;
 }
 .footer a:hover,
 .footer a:focus{
