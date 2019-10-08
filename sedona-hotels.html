@@ -28,26 +28,32 @@
           <form class="preferences-field" action="https://echo.htmlacademy.ru" method="POST">
             <fieldset class="structure-list">
               <legend>Инфраструктура:</legend>
-              <label><input type="checkbox" class="structure-item-pool" name="pool" value="pool" checked>Бассейн</label>
-              <label><input type="checkbox" class="structure-item-parking" name="parking" value="parking">Парковка</label>
-              <label><input type="checkbox" class="structure-item-wifi" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</label>
+              <label><input type="checkbox" class="structure-item-pool visually-hidden radiobutton" name="pool" value="pool" checked>Бассейн</label>
+              <label><input type="checkbox" class="structure-item-parking visually-hidden radiobutton" name="parking" value="parking">Парковка</label>
+              <label><input type="checkbox" class="structure-item-wifi visually-hidden radiobutton" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</label>
             </fieldset>
             <fieldset class="hotel-type-list">
               <legend>Тип жилья:</legend>
-              <label><input type="checkbox" class="hotel-type-item" name="hotel" value="hotel" checked>Гостиница</label>
-              <label><input type="checkbox" class="hotel-type-item" name="motel" value="motel" checked>Мотель</label>
-              <label><input type="checkbox" class="hotel-type-item" name="apartaments" value="apartaments" checked>Апартаменты</label>
+              <label><input type="checkbox" class="hotel-type-item visually-hidden radiobutton" name="hotel" value="hotel" checked>Гостиница</label>
+              <label><input type="checkbox" class="hotel-type-item visually-hidden radiobutton" name="motel" value="motel" checked>Мотель</label>
+              <label><input type="checkbox" class="hotel-type-item visually-hidden radiobutton" name="apartaments" value="apartaments" checked>Апартаменты</label>
             </fieldset>
             <fieldset class="daycoast">
-              <div class="filter-range-title">Стоимость в сутки (р):</div>
-              <div class="coast">
-                  <label class="mincoast">от <input type="text" name="min-coast" value="0"></label>
-                  <label class="maxcoast">до <input type="text" name="max-coast" value="3000"></label>
-              </div>
-              <div class="range">
-                  
-              </div>
-              <input class="apply-preferences" type="submit" id="send" name="send" value="Показать">
+                <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                      <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    </div>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
+                  </div>
             </fieldset>
            </form>
         </section>
