@@ -81,12 +81,16 @@ a{
     transform: translateX(-50%);
     left: 50%;
 }
-.intro-images img::after{
+.intro-images{
+    margin: 0;
+    padding: 0;
+}
+.intro-images::after{
+    content: url(../img/sedona-mask.svg);
+    display: block;
     position: relative;
-    background-image: url(../img/sedona-mask.svg);
     width: 100%;
-    height: 59px;
-    background-position: center bottom;
+    margin-top: 100px;
 }
 .reasons-head{
     position: relative;
@@ -146,8 +150,7 @@ a{
 .reasons-list{
     counter-reset: reason;
 }
-.reason-item-blue h2::after,
-.reason-item-gray h2::after{
+.reasons-list h2::after{
     counter-increment: reason;
     content: "-" counter(reason) "-";
     display: block;
@@ -182,6 +185,18 @@ a{
 }
 .feature-item-house{
     background-image: url(../img/house-logo.svg);
+    background-position: 50% 25%;
+    background-size: 26 28;
+    background-repeat: no-repeat;
+}
+.feature-item-food{
+    background-image: url(../img/burger-logo.svg);
+    background-position: 50% 25%;
+    background-size: 26 28;
+    background-repeat: no-repeat;
+}
+.feature-item-gift{
+    background-image: url(../img/gift-logo.svg);
     background-position: 50% 25%;
     background-size: 26 28;
     background-repeat: no-repeat;
@@ -329,7 +344,7 @@ a{
     color: #88b6d1;
 }
 .footer {
-    position: absolute;
+    position: relative;
     z-index: 2;
     display: flex;
     flex-direction: row;
@@ -419,7 +434,65 @@ a{
     height: 217px;
     background-image: url(../img/filter-background.jpg);
 }
+.structure-field{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 73px;
+    margin-top: 32px;
+}
+.hotel-type-field{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 115px;
+    margin-top: 32px;
+}
+.structure-list{
+    list-style: none;
+    padding: 0;
+}
+.structure-item{
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.structure-item-checkbox + label::before{
+    content: url(../img/checkbox-off.svg);
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    left: 300px;
 
+}
+.structure-item-checkbox:checked + label::before{
+    content: url(../img/checkbox-on.svg);
+
+    height: 23px;
+    width: 28px;
+}
+.hotel-type-list{
+    list-style: none;
+    padding: 0;
+}
+.hotel-type-item{
+    margin-top: 15px;
+    padding-left: 15px;;
+}
+.hotel-type-item-checkbox + label::before{
+    content: url(../img/checkbox-off.svg);
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    left: 550px;
+
+}
+.hotel-type-item-checkbox:checked + label::before{
+    content: url(../img/checkbox-on.svg);
+
+    height: 23px;
+    width: 28px;
+    position: absolute;
+}
 .daycoast{
     border: none;
     width: 330px;
