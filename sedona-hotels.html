@@ -26,17 +26,39 @@
         <section class="preferences">
           <h2 class="visually-hidden">Предпочтения</h2>
           <form class="preferences-field" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="structure-list">
+            <fieldset class="structure-field">
               <legend>Инфраструктура:</legend>
-              <label><input type="checkbox" class="structure-item-pool visually-hidden radiobutton" name="pool" value="pool" checked>Бассейн</label>
-              <label><input type="checkbox" class="structure-item-parking visually-hidden radiobutton" name="parking" value="parking">Парковка</label>
-              <label><input type="checkbox" class="structure-item-wifi visually-hidden radiobutton" name="wi-fi" value="wi-fi"><Wi-Fi>Wi-Fi</label>
+              <ul class="structure-list">
+                <li class="structure-item">
+                 <input class="structure-item-pool structure-item-checkbox visually-hidden" type="checkbox"  name="pool" value="pool" checked>
+                 <label for="structure-item-pool">Бассейн</label>
+                </li>
+                <li class="structure-item">
+                 <input class="structure-item-parking structure-item-checkbox visually-hidden" type="checkbox"  name="parking" value="parking">
+                 <label for="structure-item-parking">Парковка</label>
+                </li>
+                <li class="structure-item">
+                 <input class="structure-item-wifi structure-item-checkbox visually-hidden" type="checkbox"  name="wi-fi" value="wi-fi">
+                 <label for="structure-item-wifi">Wi-Fi</label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset class="hotel-type-list">
+            <fieldset class="hotel-type-field">
               <legend>Тип жилья:</legend>
-              <label><input type="checkbox" class="hotel-type-item visually-hidden radiobutton" name="hotel" value="hotel" checked>Гостиница</label>
-              <label><input type="checkbox" class="hotel-type-item visually-hidden radiobutton" name="motel" value="motel" checked>Мотель</label>
-              <label><input type="checkbox" class="hotel-type-item visually-hidden radiobutton" name="apartaments" value="apartaments" checked>Апартаменты</label>
+              <ul class="hotel-type-list">
+                <li class="hotel-type-item">
+                 <input class="hotel-type-hotel hotel-type-item-checkbox visually-hidden" type="checkbox"  name="hotel" value="hotel" checked>
+                 <label for="hotel-type-hotel">Гостиница</label>
+                </li>
+                <li class="hotel-type-item">
+                 <input class="hotel-type-motel hotel-type-item-checkbox visually-hidden" type="checkbox"  name="motel" value="motel" checked>
+                 <label for="hotel-type-motel">Мотель</label>
+                </li>
+                <li class="hotel-type-item">
+                 <input class="hotel-type-apartaments hotel-type-item-checkbox visually-hidden" type="checkbox"  name="apartaments" value="apartaments" checked>
+                 <label for="hotel-type-apatraments">Апартаменты</label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="daycoast">
                 <div class="filter-range">
