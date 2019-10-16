@@ -17,6 +17,19 @@ img{
 a{
     text-decoration: none;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    }
 .container{
     width: 1200px;
     margin: 0 auto;
@@ -62,7 +75,7 @@ a{
     justify-content: center;
     margin-top: 13px;
 }
-.navigation-item:nth-child(2){
+.navigation-item:nth-child(2){ 
     margin-right: 20%;
 }
 .header-logo{
@@ -84,10 +97,11 @@ a{
 .intro-images{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 .intro-images::after{
     content: url(../img/sedona-mask.svg);
-    display: block;
     position: relative;
     width: 100%;
     margin-top: 100px;
@@ -98,12 +112,12 @@ a{
     max-width: 100%;
     text-align: center;
     height: 214px;
-    margin-top: 98px;
+    margin-top: -10px;
 }
 .reasons-head h2{
     display: block;
     width: 500px;
-    margin-bottom: 10px;
+    margin: 0;
     padding-right: 350px;
     padding-left: 350px;
     padding-top: 60px;
@@ -128,7 +142,6 @@ a{
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: stretch;
     background-color: #fff;
 }
@@ -146,21 +159,25 @@ a{
     width: 400px;
     margin: 0;
     padding: 58px 0;
+    padding-bottom: 0;
 }
 .reasons-list{
     counter-reset: reason;
 }
-.reasons-list h2::after{
+.reason-content h3::after{
     counter-increment: reason;
     content: "-" counter(reason) "-";
     display: block;
+    margin-top: 37px;
+    font-size: 21px;
+    font-weight: normal;
 }
 .reason-content{
     font-size: 14px;
     text-align: center;
     width: 400px;
 }
-.reason-content h2{
+.reason-content h3{
     font-size: 21px;
     line-height: 21px;
 }
@@ -214,7 +231,6 @@ a{
     padding-top: 57px;
     text-align: center;
     background-color: #ffffff;
-    justify-content: space-around;
     align-items: center;
 }
 .search-hotels h2{
@@ -277,23 +293,26 @@ a{
     width: 346px;
     background-color: #f2f2f2;
     border: none;
+    padding-left: 13px;
+    margin-left: 21px;
 }
 .date-out{
     margin-top: 29px;
     display: flex;
-    justify-content: space-between;
 }
 .date-in{
     display: flex;
-    justify-content: space-between;
+}
+.adults-number{
+    display: flex;
 }
 .children-number{
    margin-left: 53px;
+   display: flex;
 }
 .people-number{
     display: flex;
     margin-top: 30px;
-    justify-content: space-between;
 }
 .people-number-field{
     width: 38px;
@@ -365,7 +384,6 @@ a{
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    justify-content: space-between;
     width: 150px;
     margin-left: 256px;
     padding: 0;
@@ -460,8 +478,8 @@ a{
     content: url(../img/checkbox-off.svg);
     height: 23px;
     width: 23px;
-    position: absolute;
-    left: 300px;
+    position: relative;
+    left: -30px;
 
 }
 .structure-item-checkbox:checked + label::before{
@@ -470,6 +488,7 @@ a{
     height: 23px;
     width: 28px;
 }
+
 .hotel-type-list{
     list-style: none;
     padding: 0;
@@ -482,8 +501,8 @@ a{
     content: url(../img/checkbox-off.svg);
     height: 23px;
     width: 23px;
-    position: absolute;
-    left: 550px;
+    position: relative;
+    left: 400px;
 
 }
 .hotel-type-item-checkbox:checked + label::before{
@@ -663,6 +682,9 @@ a{
     background-color: #ffffff;
     height: 152px;
 }
+.hotel-item:nth-child(3){
+    border-bottom: 1px solid #e5e5e5;
+}
 .hotel-image{
     margin-top: 31px;
 }
@@ -699,7 +721,7 @@ a{
 .more{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
 }
 .reserve{
     display: flex;
@@ -744,16 +766,3 @@ a{
     align-self: flex-end;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    white-space: nowrap;
-    -webkit-clip-path: inset(100%);
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    }
