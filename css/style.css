@@ -106,7 +106,7 @@ a{
     width: 100%;
     margin-top: 100px;
 }
-.reasons-head{
+.reasons-headline{
     position: relative;
     background-color: #fff;
     max-width: 100%;
@@ -321,6 +321,9 @@ a{
     height: 38px;
     text-align: center;
     padding: 0;
+}
+.icon-minus{
+    margin-left: 40px;
 }
 .icon-plus,
 .icon-minus{
