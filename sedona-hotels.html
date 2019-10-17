@@ -16,7 +16,7 @@
               </a>
               <ul class="navigation-list">
                 <li class="navigation-item"><a class="navigation-link" href="info.html">Информация</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="galery.html">Фото-видео</a></li>
+                <li class="navigation-item"><a class="navigation-link" href="galery.html">Фото и видео</a></li>
                 <li class="navigation-item"><a class="navigation-link" href="map.html">Карта штата</a></li>
                 <li class="navigation-item"><a class="navigation-link" href="sedona-hotels.html">Гостиницы</a></li>
               </ul>
@@ -30,16 +30,16 @@
               <legend>Инфраструктура:</legend>
               <ul class="structure-list">
                 <li class="structure-item">
-                 <input class="structure-item-pool structure-item-checkbox visually-hidden" type="checkbox"  name="pool" value="pool" checked>
-                 <label for="structure-item-pool">Бассейн</label>
+                 <input class="structure-item-checkbox visually-hidden" type="checkbox"  id="pool" checked>
+                 <label for="pool">Бассейн</label>
                 </li>
                 <li class="structure-item">
-                 <input class="structure-item-parking structure-item-checkbox visually-hidden" type="checkbox"  name="parking" value="parking">
-                 <label for="structure-item-parking">Парковка</label>
+                 <input class="structure-item-checkbox visually-hidden" type="checkbox"  id="parking">
+                 <label for="parking">Парковка</label>
                 </li>
                 <li class="structure-item">
-                 <input class="structure-item-wifi structure-item-checkbox visually-hidden" type="checkbox"  name="wi-fi" value="wi-fi">
-                 <label for="structure-item-wifi">Wi-Fi</label>
+                 <input class="structure-item-checkbox visually-hidden" type="checkbox"  id="wi-fi">
+                 <label for="wi-fi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -47,16 +47,16 @@
               <legend>Тип жилья:</legend>
               <ul class="hotel-type-list">
                 <li class="hotel-type-item">
-                 <input class="hotel-type-hotel hotel-type-item-checkbox visually-hidden" type="checkbox"  name="hotel" value="hotel" checked>
-                 <label for="hotel-type-hotel">Гостиница</label>
+                 <input class="hotel-type-item-checkbox visually-hidden" type="checkbox"  id="hotel" checked>
+                 <label for="hotel">Гостиница</label>
                 </li>
                 <li class="hotel-type-item">
-                 <input class="hotel-type-motel hotel-type-item-checkbox visually-hidden" type="checkbox"  name="motel" value="motel" checked>
-                 <label for="hotel-type-motel">Мотель</label>
+                 <input class="hotel-type-item-checkbox visually-hidden" type="checkbox"  id="motel" checked>
+                 <label for="motel">Мотель</label>
                 </li>
                 <li class="hotel-type-item">
-                 <input class="hotel-type-apartaments hotel-type-item-checkbox visually-hidden" type="checkbox"  name="apartaments" value="apartaments" checked>
-                 <label for="hotel-type-apatraments">Апартаменты</label>
+                 <input class="hotel-type-item-checkbox visually-hidden" type="checkbox"  id="apartaments" checked>
+                 <label for="apatraments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -96,8 +96,8 @@
               </li>
             </ul>
           <div class="sort-direction">
-            <a href="#"><img src="img/arrow-up.svg" height="10" width="11" alt="От большего к меньшему"></a>
-            <a href="#"><img src="img/arrow-down.svg" height="10" width="11" alt="От меньшего к большему"></a>
+            <a href="#" class="direction-down" aria-label="От большего к меньшему"></a>
+            <a href="#" class="direction-up" aria-label="От меньшего к большему"></a>
           </div>
         </section>
         <section class="sort-result"> 
