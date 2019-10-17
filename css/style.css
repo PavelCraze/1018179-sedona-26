@@ -73,7 +73,7 @@ a{
 }
 .navigation-link:hover,
 .navigation-link:focus{
-    color: #00bfff;
+    color: #81b3d2;
 }
 .navigation-link:active{
     color: #b7b7b7;
@@ -125,7 +125,6 @@ a{
 }
 .reasons-headline h2{
     display: block;
-    width: 500px;
     margin: 0;
     padding-right: 350px;
     padding-left: 350px;
@@ -134,8 +133,9 @@ a{
     font-weight: bold;
     line-height: 26px;
 }
-.reasons-head p{
+.reasons-headline p{
     font-weight: normal;
+    margin: 0;
 }
 
 .background-images{
@@ -233,7 +233,6 @@ a{
 .search-hotels {
     display: flex;
     flex-direction: column;
-    width: 568px;
     margin: auto;
     padding-right: 316px;
     padding-left: 316px;
@@ -420,6 +419,11 @@ a{
 }
 .social-button a{
     height: 20px;
+    width: 20px;
+}
+.social-button img{
+    height: 20px;
+    width: 20px;;
 }
 .map{
     position: relative;
@@ -515,11 +519,9 @@ a{
     width: 23px;
     position: relative;
     left: 400px;
-
 }
 .hotel-type-item-checkbox:checked + label::before{
     content: url(../img/checkbox-on.svg);
-
     height: 23px;
     width: 28px;
     position: absolute;
@@ -535,12 +537,9 @@ a{
 }
 .price-controls{
     position: relative;
-    
     height: 36px;
     margin-bottom: 20px;
-    
     font-size: 0;
-  
     border: 2px solid #ffffff;
     border-radius: 2px;
  }
@@ -550,27 +549,22 @@ a{
     position: absolute;
     top: 50%;
     left: 50%;
-  
     width: 2px;
     height: 22px;
-  
     background: #ffffff;
     transform: translate(-50%, -50%);
 }
   
 .price-controls label{
     display: inline-block;
-  
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
-  
     cursor: pointer;
 }
   
 .price-controls .min-price,
 .price-controls .max-price{
-    width: 90px;
     padding-left: 65px;
 }
   
@@ -676,6 +670,21 @@ a{
     align-items: center;
     margin-left: 504px;
 }
+.direction-down{
+    width: 10;
+    height: 10;
+    border-style: solid;
+    border-width: 0 5px 8.7px 5px;
+    border-color: transparent transparent #cacaca transparent;
+}
+.direction-up{
+    width: 10;
+    height: 10;
+    border-style: solid;
+    border-width: 8.7px 5px 0 5px;
+    border-color: #cacaca transparent transparent transparent;
+}
+
 .sort-by{
     margin-left: 50px;
 }
