@@ -18,7 +18,7 @@
                 <li class="navigation-item"><a class="navigation-link" href="info.html">Информация</a></li>
                 <li class="navigation-item"><a class="navigation-link" href="galery.html">Фото и видео</a></li>
                 <li class="navigation-item"><a class="navigation-link" href="map.html">Карта штата</a></li>
-                <li class="navigation-item"><a class="navigation-link" href="sedona-hotels.html">Гостиницы</a></li>
+                <li class="navigation-item"><a class="navigation-link-active navigation-link" href="sedona-hotels.html">Гостиницы</a></li>
               </ul>
             </nav>
           </header>
@@ -56,13 +56,13 @@
                 </li>
                 <li class="hotel-type-item">
                  <input class="hotel-type-item-checkbox visually-hidden" type="checkbox"  id="apartaments" checked>
-                 <label for="apatraments">Апартаменты</label>
+                 <label for="apartaments">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="daycoast">
+                <legend>Стоимость в сутки (р):</legend>
                 <div class="filter-range">
-                    <div class="filter-range-title">Стоимость в сутки (р):</div>
                     <div class="price-controls">
                       <label class="min-price">от <input type="text" name="min-price" value="0"></label>
                       <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
@@ -81,11 +81,11 @@
         </section>
         <section class="sort">
           <div class="preferences-result">
-            <h3>Найдено: 3</h3>
+            <h3 class="sort-head">Найдено: 3</h3>
           </div>
           <h3 class="sort-by">Сортировка:</h3>
             <ul class="sort-list">
-              <li class="sort-item"> 
+              <li class="sort-item sort-item-active"> 
                 <a href="#">По цене</a>
               </li>
               <li class="sort-item">
@@ -96,8 +96,8 @@
               </li>
             </ul>
           <div class="sort-direction">
-            <a href="#" class="direction-down" aria-label="От большего к меньшему"></a>
-            <a href="#" class="direction-up" aria-label="От меньшего к большему"></a>
+            <a href="#" class="direction-down" aria-label="От меньшего к большему"></a>
+            <a href="#" class="direction-up direction-active" aria-label="От большего к меньшему"></a>
           </div>
         </section>
         <section class="sort-result"> 
