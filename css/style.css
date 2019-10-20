@@ -37,7 +37,6 @@ a{
     -webkit-clip-path: inset(100%);
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;
     }
 .container{
     width: 1200px;
@@ -48,6 +47,7 @@ a{
     z-index:1;
     background-size: 100%;
     box-shadow: 5px 0 15px -10px rgba(0, 0, 0, 0.2), -5px 0 15px -10px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
 }
 .header{
     margin: 0 auto;
