@@ -316,12 +316,12 @@ a{
         transform: translateY(30px) translateX(-50%);
 }
     100%{
-        transform: translateY(-2000px) translateX(-50%);
+        transform: translateY(-20000px) translateX(-50%);
 }
 }
 @keyframes search-open-move{
     0% {
-        transform: translateY(-2000px) translateX(-50%);
+        transform: translateY(-20000px) translateX(-50%);
 }
     70% {
         transform: translateY(30px) translateX(-50%);
@@ -337,7 +337,7 @@ a{
     position: absolute;
     left: 50%;
     width: 568px;
-    transform: translateX(-50%) translateY(-2000px);
+    transform: translateX(-50%) translateY(-20000px);
     background-color: #ffffff;    
     animation: search-hide-move 0.9s;
 
