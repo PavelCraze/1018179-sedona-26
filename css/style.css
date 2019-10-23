@@ -333,6 +333,28 @@ a{
         transform: translateY(0) translateX(-50%);
 }
 }
+@keyframes shake {
+            0%,
+            100% {
+              transform: translateX(-50%);
+}
+  
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+            transform: translateX(-51%);
+}
+  
+        20%,
+        40%,
+        60%,
+        80% {
+              transform: translateX(-49%);
+ }
+}
+
 .open-search-hide{
     position: absolute;
     left: 50%;
@@ -340,7 +362,6 @@ a{
     transform: translateX(-50%) translateY(-20000px);
     background-color: #ffffff;    
     animation: search-hide-move 0.9s;
-
 
 }
 .open-search-hide label{
@@ -361,6 +382,7 @@ a{
     padding-left: 5px;
     margin-right: auto;
 }
+
 .search-panel{
     border: none;
     padding: 55px;
@@ -503,6 +525,7 @@ a{
     flex-wrap: wrap;
     margin-left: 252px;
     padding: 0;
+    margin-bottom: 19px;
 }
 .social-button{
     display: flex;
@@ -535,7 +558,7 @@ a{
 .map{
     position: relative;
     height: 595px;
-    background-image: url(/img/sedona-map.png);
+    background-image: url(../img/sedona-map.png);
 }
 .footer a:hover,
 .footer a:focus{
@@ -545,6 +568,7 @@ a{
     line-height: 26px;
     margin-left: 132px;
     font-size: 21px;
+    margin-bottom: 10px;
 }
 .copyright{
     display: flex;
@@ -555,10 +579,11 @@ a{
     display: block;
     align-self: center;
     font-weight: normal;
+    margin-bottom: 10px;
 }
 .copyright-link{
     display: block;
-    margin-left: 12px;
+    margin-left: 9px;
 }
 .copyright-link:hover path{
     fill: #81b3d2;
@@ -675,13 +700,16 @@ a{
 .daycoast{
     border: none;
     width: 330px;
-    margin-left: 337px;
+    margin-left: 345px;
     color: #ffffff;
     text-transform: uppercase;
     align-self: flex-start;
+    padding: 0;
+
 }
 .filter-range{
-    padding-top: 3px;
+    padding-top: 8px;
+    padding-right: 10px;
 }
 .price-controls{
     position: relative;
@@ -711,14 +739,18 @@ a{
     cursor: pointer;
 }
   
-.price-controls .min-price,
-.price-controls .max-price{
+.price-controls .min-price{
     padding-left: 65px;
     padding-top: 5px;
     line-height: 21px;
     font-weight: normal;
 }
-  
+.price-controls .max-price{
+    padding-left: 76px;
+    padding-top: 5px;
+    line-height: 21px;
+    font-weight: normal;
+}
 .price-controls input{
     width: 50px;
     margin: 0;
@@ -778,9 +810,10 @@ a{
   
 .btn-transparent{
     display: block;
-    margin: 0 auto;
+    margin: 0 88px;
     padding: 6px 35px;
     font-size: 14px;
+    padding-right: 32px;
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
@@ -968,8 +1001,26 @@ a{
     text-align: center;
     font-weight: normal;
 }
-.stars{
-    align-self: flex-end;
-    margin-bottom: 45px;
+.stars {
+    height: 17px;
+    margin-bottom: 47px;
+    margin-left: auto;
+    background-image: url(../img/star.svg);
+    background-position-x: right;
+    background-repeat: space;
+    background-size: 18px;
 }
-
+  
+.two-stars {
+    width: 41px;
+}
+  
+.three-stars {
+    width: 65px;
+}
+.four-stars{
+    width: 89px;
+}
+.modal-error{
+    animation: shake 0.6s;
+}
