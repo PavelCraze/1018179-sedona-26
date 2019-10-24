@@ -15,9 +15,9 @@
           <img src="img/sedona-logo.svg" width="143" height="71" alt="Логотип Седона">
         </a>
         <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link" href="info.html">Информация</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="galery.html">Фото и видео</a></li>
-          <li class="navigation-item"><a class="navigation-link" href="map.html">Карта штата</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Информация</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Фото и видео</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Карта штата</a></li>
           <li class="navigation-item"><a class="navigation-link" href="sedona-hotels.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -25,15 +25,11 @@
     <main>
       <h1 class="visually-hidden">Город Седона</h1>
       <div class="intro-images">
-       <figure class="intro-text">
-         <img class="welcome-text" src="img/sedona-welcome.svg">
-       </figure>
+         <img class="intro-text" src="img/sedona-welcome.svg">
       </div>
       <section class="reasons">
-       <div class="reasons-headline">
            <h2 class="reasons-head">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-           <p>Рассмотрим 5 причин, по которым седона лучше, чем гранд-каньон!</p>
-       </div>
+           <p class="reasons-subtitle">Рассмотрим 5 причин, по которым седона лучше, чем гранд-каньон!</p>
        <ol class="reasons-list">
          <li class="reason-item-blue">
           <div class="reason-content">
@@ -41,7 +37,7 @@
            Настоящий городок
          </h3>
          <p class="reason-text">
-           Седона — не аттракцион для туристов,<br> там течет своя жизнь
+           Седона — не аттракцион для туристов, там&#160течет своя жизнь
          </p>
         </div>
          <img class="features-image" src="img/sedona-shop.jpg" width="800" height="256" alt="Вид города">
@@ -74,51 +70,48 @@
         <li class="reason-item-gray">
             <div class="reason-content">
            <h3 class="reason-item-head">
-             Небольшая<br>
-             площадь
+             Небольшая площадь
            </h3>
            <p class="reason-text">
-             Все достопримечательности<br>находятся очень близко
+             Все достопримечательности находятся&#160очень близко
            </p>
           </div>
         </li>
         <li class="reason-item-gray">
             <div class="reason-content">
            <h3 class="reason-item-head">
-             Красивая<br>
-             дорога
+             Красивая дорога
            </h3>
            <p class="reason-text">
-             Ехать в Седону из Лас-Вегаса совсем<br> не скучно!
+             Ехать в Седону из Лас-Вегаса совсем не&#160скучно!
            </p>
           </div>
         </li>
         <li class="reason-item-gray">
             <div class="reason-content">
            <h3 class="reason-item-head">
-             Мало<br> туристов
+             Мало туристов
            </h3>
            <p class="reason-text">
-             Большинство едет в гранд-каньон<br> и толпится там
+             Большинство едет в гранд-каньон&#160и толпится там
            </p>
           </div>
         </li>
       </ol>
       </section>
-      <section  class="search-hotels">
-      <h2>Заинтересовались?</h2>
+      <div  class="search-hotels">
+      <b>Заинтересовались?</b>
       <p>Укажите предпологаемые даты поездки,<br>
          и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
         <button class="search-button" type="button" aria-label="Поиск отелей">
         Поиск гостиницы в седоне
         </button>
-      </section>
+      </div>
         <div class="map">
         <form class="open-search" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset class="search-panel">
            <div class="date-container">
-           <label for="check-in-date">Дата заезда:</label>
+           <label for="check-in-date">Дата&#160заезда:</label>
            <input class="date-field" id="check-in-date" type="text" name="indate" value="" placeholder="24 апреля 2017">
            <button  class="calendar-button" type="button" aria-label="вызов календаря">
               <svg xmlns="http://www.w3.org/2000/svg" class="calendar-in"  width="21" height="22" viewBox="0 0 21 22">
@@ -127,7 +120,7 @@
            </button>
            </div>
            <div class="date-container">
-           <label for="check-out-date">Дата выезда:</label>
+           <label for="check-out-date">Дата&#160выезда:</label>
            <input class="date-field" id="check-out-date" type="text" name="outdate" value="" placeholder="4 июля 2017">
            <button  class="calendar-button" type="button" aria-label="вызов календаря">
               <svg xmlns="http://www.w3.org/2000/svg" class="calendar-out"  width="21" height="22" viewBox="0 0 21 22">
@@ -138,27 +131,19 @@
          <div class="people-number">
          <div class="adults-number">
          <label for="adults">Взрослые:</label>
-         <button  type="button" class="button button-minus">
-           -
-         </button>
+         <button  type="button" class="button button-minus" aria-label="-"></button>
          <input class="people-number-field" id="adults" name="adults-number" type="text" value="2">
-         <button type="button" class="button button-plus">
-           +
+         <button type="button" class="button button-plus" aria-label="+"></button>
          </button>
          </div>
          <div class="children-number">
          <label for="children">Дети:</label>
-         <button type="button" class="button button-minus">
-           -
-         </button>
+         <button type="button" class="button button-minus" aria-label="-"></button>
          <input class="people-number-field" id="children" name="children-number" type="text" value="0">
-         <button type="button" class="button button-plus">
-           +
-         </button>
+         <button type="button" class="button button-plus" aria-label="+"></button>
          </div>
         </div>
           <button type="submit" class="submit">Найти</button>
-        </fieldset>
         </form>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730558!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1570636953442!5m2!1sru!2sru" width="1200" height="595" frameborder="0" style="border:0;" allowfullscreen=""></iframe>  
       </div>
