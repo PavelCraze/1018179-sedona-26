@@ -1062,7 +1062,7 @@ a {
   margin-left: 47px;
   margin-right: 9px;
   font-size: 12px;
-  font-weight: normal;
+  font-weight: bold;
 
 }
 
@@ -1172,6 +1172,7 @@ a {
   margin-top: 12px;
   line-height: 21px;
   padding-top: 2px;
+  vertical-align: middle;
 }
 
 .reserve-button {
@@ -1183,6 +1184,7 @@ a {
   font-weight: bold;
   line-height: 21px;
   padding-top: 2px;
+  vertical-align: middle;
 }
 
 .hotel-rating {
