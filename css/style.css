@@ -327,7 +327,6 @@ a {
   font-weight: normal;
   padding-bottom: 44px;
   margin: 0;
-
 }
 
 .search-button {
@@ -674,13 +673,11 @@ a {
 .social-button:hover,
 .social-button:focus {
   background-color: #3e89b8;
-
 }
 
 .social-button:active {
   background-color: #5496bd;
   color: #88b6d1;
-
 }
 
 .social-button-facebook:active::before,
@@ -766,6 +763,7 @@ a {
   min-height: 217px;
   padding: 0;
   background-image: url(../img/filter-background.jpg);
+  background-position-y: -50px;
 }
 
 .preferences-field legend {
@@ -849,7 +847,6 @@ a {
   position: absolute;
   left: -25px;
   top: 0;
-
 }
 
 .hotel-type-item-checkbox:checked+label::before {
