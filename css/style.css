@@ -405,7 +405,6 @@ a {
 }
 
 @keyframes shake {
-
   0%,
   100% {
     transform: translateX(-50%);
@@ -1062,8 +1061,7 @@ a {
   margin-left: 47px;
   margin-right: 9px;
   font-size: 12px;
-  font-weight: bold;
-
+  font-weight: normal;
 }
 
 .sort-item a {
@@ -1152,6 +1150,7 @@ a {
 .more {
   display: flex;
   flex-direction: column;
+  color: #333333;
 }
 
 .reserve {
@@ -1169,10 +1168,11 @@ a {
   text-align: center;
   font-weight: bold;
   font-size: 14px;
-  margin-top: 12px;
+  margin-top: 11px;
   line-height: 21px;
-  padding-top: 2px;
+  padding-top: 3px;
   vertical-align: middle;
+  padding-bottom: 3px;
 }
 
 .reserve-button {
@@ -1183,8 +1183,10 @@ a {
   text-align: center;
   font-weight: bold;
   line-height: 21px;
-  padding-top: 2px;
+  padding-top: 3px;
   vertical-align: middle;
+  margin-top: 11px;
+  padding-bottom: 3px;
 }
 
 .hotel-rating {
